@@ -1,11 +1,10 @@
 class Negociacao {
     constructor(data, quantidade, valor) {
         Object.assign(this,{
-            _data: new Date(data.getTime())
-            , _quantidade: quantidade
-            , _valor: valor
+                 _quantidade: quantidade
+                ,_valor: valor
         });
-
+        this._data = new Date(data.getTime())
         Object.freeze(this);
 
     }
