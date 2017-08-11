@@ -6,7 +6,7 @@ var campos = [
 
 
 var tbody = document.querySelector('table	tbody');
-document.querySelector('.form').addEventListener('submit',(event) => {
+document.querySelector('.form').addEventListener('submit', (event) => {
 
     event.preventDefault()
     var tr = document.createElement('tr');
@@ -24,13 +24,13 @@ document.querySelector('.form').addEventListener('submit',(event) => {
 
     tbody.appendChild(tr)
 
-    	//	limpa	o	campo	da	data
-        campos[0].value	=	'';
-        //	limpa	o	campo	da	quantidade
-        campos[1].value	=	1;
-        //	limpa	o	campo	do	valor
-        campos[2].value	=	0;
-        //	foca	no	campo	da	data
-        campos[0].focus();
+    //	limpa	o	campo	da	data
+    campos[0].value = '';
+    //	limpa	o	campo	da	quantidade
+    campos[1].value = 1;
+    //	limpa	o	campo	do	valor
+    campos[2].value = 0;
+    //	foca	no	campo	da	data
+    campos[0].focus();
 });
 
